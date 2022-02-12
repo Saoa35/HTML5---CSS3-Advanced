@@ -1,0 +1,166 @@
+.grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 'header' 'article' 'section' 'aside' 'footer';
+}
+
+header {
+    grid-area: header;
+    display: grid;
+
+    background-color: rgb(5, 37, 65);
+    color:whitesmoke;
+    min-height: 380px;
+}
+
+header>ul {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+header>ul>li {
+    list-style: none;
+}
+header>ul>li>a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header>div {
+    text-align: center;
+}
+
+article {
+    grid-area: article;
+    background-color: rgb(229, 230, 218);
+}
+
+article>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 50px 0 60px;
+    justify-self: center;
+
+}
+
+article>div>p>img {
+    width: 60px;
+    height: 60px;
+}
+
+article>div>p :nth-child(3) {
+    font-weight: bold;
+}
+
+section {
+    grid-area: section;
+    background-color:snow;
+}
+
+.section1 {
+    background-color: rgb(184, 182, 178);
+    display: grid;
+}
+
+.icons {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    padding: 50px 0 60px;
+}
+
+.icons>p :nth-child(3) {
+    font-weight: bold;
+}
+
+.section2 {
+    background-color: rgb(248, 248, 248);
+    display: grid;
+}
+
+.icons2 {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.first {
+    justify-self: end;
+    text-align: end;
+}
+
+.second {
+    justify-self: center;
+}
+
+.third {
+    justify-self: start;
+    text-align: start;
+}
+
+.emty {
+    width: 20%;
+}
+
+.last {
+    grid-column: 1 / 4; 
+    text-align:  center;
+}
+
+aside {
+    grid-area: aside;
+    display: grid;
+    background-color:rgb(247, 240, 232);
+}
+
+aside>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align:  center;
+}
+
+.lable {
+    display: grid;
+    justify-self: center;
+    gap: 10px;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer {
+    grid-area: footer;
+    background-color:slateblue;
+}
+
+footer>form>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+footer>form>div>p {
+    display: grid;
+    grid-template-columns: 450px;
+    justify-content: end;
+    gap: 10px;
+}
+
+.textarea {
+    justify-content: start;
+}
+
+.button {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.button>input {
+    background-color: yellowgreen;
+    width: 120px; 
+    height: 40px;
+}
