@@ -1,4 +1,7 @@
 header {
-    background-image: url('C:\DISK D\Programirovanie\CyberBionicSys\HomeWork\HTML-CSS\HTML5 & CSS3 Advanced\Lesson2\№2\19862.jpg');
-    background-color: azure;
+    background-color: rgb(16, 179, 179);
+    width: auto;
+    height: 100px;
+    position: relative;
+    text-align: center;
 }
