@@ -14,12 +14,31 @@ header {
 }
 
 header h1 {
-    color: rgb(180, 182, 88);
+    color: rgb(181, 212, 41);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
     background-color:greenyellow;
     width: auto;
     height: 40px;
+}
+
+nav li {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color:tomato;
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+nav li a {
+    color:aliceblue;
+    text-decoration: none;
 }
