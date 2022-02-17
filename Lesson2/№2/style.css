@@ -1,7 +1,14 @@
 header {
+    background: url('https://d626yq9e83zk1.cloudfront.net/files/2017/12/26-770x425.jpg');
     background-color: rgb(16, 179, 179);
     width: auto;
     height: 100px;
-    position: relative;
-    text-align: center;
+    /* position: relative;
+    text-align: center; */
+}
+
+header h1 {
+    color: azure;
+    margin: 0, auto;
+    font-family:sans-serif;
 }
