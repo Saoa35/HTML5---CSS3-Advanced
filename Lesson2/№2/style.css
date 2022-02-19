@@ -1,9 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    /* border: 1px solid gainsboro; */
-    /* border-radius: 20px; */
+    display:grid;
+    grid-gap: 3px;
 }
 
 header {
+    grid-area: header;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -19,6 +24,7 @@ header h1 {
 }
 
 nav {
+    grid-area: nav;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -44,6 +50,19 @@ nav li a {
 }
 
 section {
+    grid-area: section;
     display: grid;
-    
+    grid-template-columns: 1fr 1fr;
+}
+
+aside {
+    grid-area: aside;
+    background-color:coral;
+}
+
+footer {
+    grid-area: footer;
+    width: auto;
+    height: 100px;
+    background-color:blueviolet;
 }
