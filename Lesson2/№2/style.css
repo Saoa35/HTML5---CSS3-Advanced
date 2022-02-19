@@ -5,10 +5,17 @@
 body {
     display:grid;
     grid-gap: 3px;
+    grid-template-areas: 
+                            'header'
+                            'nav'
+                        'section' 'aside'
+                            'footer';
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 header {
     grid-area: header;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -25,6 +32,7 @@ header h1 {
 
 nav {
     grid-area: nav;
+    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -51,17 +59,21 @@ nav li a {
 
 section {
     grid-area: section;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 aside {
     grid-area: aside;
+    border-radius: 10px;
     background-color:coral;
+    width: 20%;
 }
 
 footer {
     grid-area: footer;
+    border-radius: 10px;
     width: auto;
     height: 100px;
     background-color:blueviolet;
