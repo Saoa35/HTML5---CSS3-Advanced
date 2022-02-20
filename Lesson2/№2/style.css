@@ -66,17 +66,43 @@ section {
     justify-items: center;
 }
 
+section div {
+    display: flex;
+    justify-content: space-around;
+}
+
 section div img {
     display: block;
-    width: 430px;
+    width: 60%;
     height: 380px;
     border-radius: 10px;
+}
+
+.description {
+    display: block;
+    width: 35%;
+}
+
+.showMap {
+    display: block;
+    background-color:rgb(31, 230, 163);
+    width: 150px;
+    height: 40px;
+    border-radius:10px;
+    color:rgb(185, 48, 48);
 }
 
 footer {
     grid-area: footer;
     border-radius: 10px;
     width: auto;
-    height: 100px;
+    height: 50px;
     background-color:blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
+
+/* footer span {
+    margin: auto;
+} */
