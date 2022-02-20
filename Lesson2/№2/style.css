@@ -107,9 +107,14 @@ footer {
     grid-area: footer;
     border-radius: 10px;
     width: auto;
-    height: 50px;
+    height: auto;
     background-color:blueviolet;
     display: flex;
     justify-content: center;
     align-items:center;
+}
+
+footer span {
+    padding: 15px;
+    color:azure;
 }
