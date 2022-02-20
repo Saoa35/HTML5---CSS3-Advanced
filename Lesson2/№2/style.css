@@ -3,13 +3,14 @@
 }
 
 body {
+    background-color:bisque;
     display:grid;
     grid-gap: 3px;
     grid-template-areas: 
-                            'header'
-                            'nav'
-                            'section'
-                            'footer';
+        'header'
+        'nav'
+        'section'
+        'footer';
 }
 
 header {
@@ -62,6 +63,13 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+}
+
+section div img {
+    display: block;
+    width: 430px;
+    height: 380px;
+    border-radius: 10px;
 }
 
 footer {
