@@ -61,6 +61,7 @@ section {
     grid-area: section;
     border-radius: 10px;
     display: grid;
+    row-gap: 20px;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
