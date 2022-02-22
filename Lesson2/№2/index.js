@@ -1,6 +1,9 @@
-let showMapButton = document.querySelectorAll('showMap');
-console.log(showMapButton);
+// let showMapButton = document.querySelectorAll('.showMap');
+let showMapButton = document.querySelector('.showMap1');
+let mapBlock = document.querySelector('.mapBlock');
 
-showMapButton.onclick = function () {
-    console.log('showMapButton');
-}
+console.log(mapBlock);
+
+showMapButton.addEventListener('click', function() {
+    mapBlock.setAttribute('class', 'mapBlockShow');
+});
