@@ -119,6 +119,11 @@ section div img {
     height: 350px;
 }
 
+.mapBlockShow {
+    width: 300px;
+    height: 350px;
+}
+
 footer {
     grid-area: footer;
     border-radius: 10px;
