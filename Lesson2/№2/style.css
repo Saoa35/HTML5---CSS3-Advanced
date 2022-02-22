@@ -94,13 +94,29 @@ section div img {
     color:azure
 }
 
-.showMap {
+.description button {
     display: block;
     background-color:rgb(31, 170, 12);
     width: 150px;
     height: 40px;
     border-radius:10px;
     color:rgb(235, 235, 235);
+    margin: 5px;
+}
+
+/* .showMap {
+    display: block;
+    background-color:rgb(31, 170, 12);
+    width: 150px;
+    height: 40px;
+    border-radius:10px;
+    color:rgb(235, 235, 235);
+} */
+
+.mapBlock {
+    display: none;
+    width: 300px;
+    height: 350px;
 }
 
 footer {
