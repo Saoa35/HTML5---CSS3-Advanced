@@ -3,6 +3,12 @@ let hidemapButton = document.querySelectorAll('.hideMap');
 let mapBlock = document.querySelectorAll('.mapBlock');
 
 
+function show(e){
+    e.target.style.visibility = 'visible';
+  }
+  
+  showMapButton.addEventListener('click', show, false);
+
 function hide(e){
     e.target.style.visibility = 'hidden';
   }
