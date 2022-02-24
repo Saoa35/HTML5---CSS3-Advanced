@@ -114,7 +114,8 @@ section div img {
 } */
 
 .mapBlock {
-    display: none;
+    visibility:collapse;
+    /* display: none; */
     width: 300px;
     height: 350px;
 }
