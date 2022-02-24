@@ -7,13 +7,13 @@ function show(e){
     e.target.style.visibility = 'visible';
   }
   
-  showMapButton.addEventListener('click', show, false);
+  showMapButton.forEach(el => el.addEventListener('click', show, false));
 
 function hide(e){
     e.target.style.visibility = 'hidden';
   }
   
-  hidemapButton.addEventListener('click', hide, false);
+  hidemapButton.forEach(el => el.addEventListener('click', hide, false));
 
 
 // showMapButton.forEach(el => el.addEventListener('click', function() {
