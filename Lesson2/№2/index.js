@@ -2,13 +2,21 @@ let showMapButton = document.querySelectorAll('.showMap');
 let hidemapButton = document.querySelectorAll('.hideMap');
 let mapBlock = document.querySelectorAll('.mapBlock');
 
-showMapButton.forEach(el => el.addEventListener('click', function() {
-    mapBlock.forEach(e => e.setAttribute('class', 'mapBlockShow')) 
-}));
 
-hidemapButton.forEach(el => el.addEventListener('click', function() {
-    mapBlock.forEach(e => e.setAttribute('class', 'mapBlock')) 
-}));
+function hide(e){
+    e.target.style.visibility = 'hidden';
+  }
+  
+  hidemapButton.addEventListener('click', hide, false);
+
+
+// showMapButton.forEach(el => el.addEventListener('click', function() {
+//     mapBlock.forEach(e => e.setAttribute('class', 'mapBlockShow')) 
+// }));
+
+// hidemapButton.forEach(el => el.addEventListener('click', function() {
+//     mapBlock.forEach(e => e.setAttribute('class', 'mapBlock')) 
+// }));
 
 
 
