@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculation</title>
+    <script>
+        window.onload = function() {
+            if(window.Worker) {
+                let worker = new Worker('workerAdd.js');
+                let firstNum = document.querySelector('#number1');
+                let secondNum = document.querySelector('#number2');
+                let result = document.querySelector('p');
+            }
+        }
+    </script>
 </head>
 <body>
 
