@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculation</title>
     <script>
-        window.onload = function() {
+        // window.onload = function() {
             if(window.Worker) {
-                let worker = new Worker('workerAdd.js');
+                let workerAdd = new Worker('workerAdd.js');
                 let firstNum = document.querySelector('#number1');
                 let secondNum = document.querySelector('#number2');
                 let result = document.querySelector('p');
             }
-        }
+        // }
     </script>
 </head>
 <body>
