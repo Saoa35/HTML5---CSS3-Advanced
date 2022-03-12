@@ -21,16 +21,19 @@
         let pinkButton = document.getElementById('pinkColor');
         let body = document.querySelector('body');
 
-        // body.style.backgroundColor = 'aqua';
+        let buttons = [aquaButton, yellowButton, pinkButton];
 
-        aquaButton.addEventListener('click', function() {
-            body.style.backgroundColor = 'aqua';
+        buttons.forEach(el => { 
+            el.addEventListener('click', function() {
+            if(el === aquaButton) {
+                body.style.backgroundColor = 'aqua';
+            }else if (el === yellowButton) {
+                body.style.backgroundColor = 'rgb(208, 255, 0)';
+            } else if (el === pinkButton) {
+                body.style.backgroundColor = 'rgb(255, 0, 149)';
+            }
+            });
         });
-
-        // function changeColor (button) {
-        //     button.addEventLis
-        // }
-        // console.log(main);
 
     </script>
     
