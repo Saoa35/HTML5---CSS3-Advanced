@@ -8,21 +8,29 @@
 </head>
 <body>
 
-    <main>
-        <div style="width: auto; height: 60px;">
+        <div style="width: 320px; height: 60px; background-color:aliceblue">
             <button id="aquaColor" style="width: 100px; height: 50px; background-color: aqua;">aquaColor</button>
             <button id="yellowColor" style="width: 100px; height: 50px; background-color: rgb(208, 255, 0);">yellowColor</button>
             <button id="pinkColor" style="width: 100px; height: 50px; background-color: rgb(255, 0, 149);">pinkColor</button>
         </div>
-    </main>
 
     <script>
 
         let aquaButton = document.getElementById('aquaColor');
         let yellowButton = document.getElementById('yellowColor');
         let pinkButton = document.getElementById('pinkColor');
-        
-        // console.log(aquaButton);
+        let body = document.querySelector('body');
+
+        // body.style.backgroundColor = 'aqua';
+
+        aquaButton.addEventListener('click', function() {
+            body.style.backgroundColor = 'aqua';
+        });
+
+        // function changeColor (button) {
+        //     button.addEventLis
+        // }
+        // console.log(main);
 
     </script>
     
