@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,12 @@
 
     <script>
         window.addEventListener("load", function() {
-            let svg = createDiagram([20, 5, 150, 200, 80, 60, 10, 45, 180, 90], 600, 300, "blue");
+            let svg = createDiagram([20, 5, 150, 200, 80, 60, 10, 45], 600, 300, "blue");
+
+            let div = document.getElementById('container');
+
+            div.appendChild(svg);
         });
-
-        let div = document.getElementById('container');
-
-        console.log(div);
-
-        // div.appendChild(svg);
     </script>
 </head>
 <body>
