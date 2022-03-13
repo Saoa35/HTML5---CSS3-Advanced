@@ -16,7 +16,19 @@ function createDiagram (data, width, height, color) {
 
         item.setAttribute("y", height - itemHeight);
         item.setAttribute("x", itemWidth * el);
+
+        item.style.fill = color;
+
+        item.addEventListener("mouseover", overOn);
+        item.addEventListener("mouseout", outOn);
+
+        svg.append(item);
     });
+
+    function overOn() {this.style.fill = "red";}
+    function outOn() {this.style.fill = "color";}
+
+    return svg;
 }
 
 // let ss = [2, 4, 6, 8, 12, 10];
