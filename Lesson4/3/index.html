@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG Diogram</title>
+    <title>SVG Gistogramm</title>
     <script src="index.js"></script>
+
+    <script>
+        window.addEventListener("load", function() {
+            let svg = createDiagram([20, 5, 150, 200, 80, 60, 10, 45, 180, 90], 600, 300, "blue");
+        });
+
+        let div = document.getElementById('container');
+
+        console.log(div);
+
+        // div.appendChild(svg);
+    </script>
 </head>
 <body>
 
