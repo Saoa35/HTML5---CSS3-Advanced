@@ -8,14 +8,15 @@ function createDiagram (data, width, height, color) {
     let scale = height / maxNumber;
     let itemWidth = Math.floor(width / data.length);
 
-    data.map(el => {
+    for(let i = 0; i < data.length; i++) {
         let item = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-        let itemHeight = el * scale;
+
+        let itemHeight = data[i] * scale;
         item.setAttribute("height", itemHeight + "px");
         item.setAttribute("width", itemWidth - 4 + "px");
 
         item.setAttribute("y", height - itemHeight);
-        item.setAttribute("x", itemWidth * el);
+        item.setAttribute("x", itemWidth * i);
 
         item.style.fill = color;
 
@@ -23,10 +24,10 @@ function createDiagram (data, width, height, color) {
         item.addEventListener("mouseout", outOn);
 
         svg.append(item);
-    });
+    }
 
     function overOn() {this.style.fill = "red";}
-    function outOn() {this.style.fill = "color";}
+    function outOn() {this.style.fill = color;}
 
     return svg;
 }
