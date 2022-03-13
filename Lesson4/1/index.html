@@ -9,9 +9,9 @@
 <body>
 
         <div style="width: 320px; height: 60px; background-color:aliceblue">
-            <button id="aquaColor" style="width: 100px; height: 50px; background-color: aqua;">aquaColor</button>
-            <button id="yellowColor" style="width: 100px; height: 50px; background-color: rgb(208, 255, 0);">yellowColor</button>
-            <button id="pinkColor" style="width: 100px; height: 50px; background-color: rgb(255, 0, 149);">pinkColor</button>
+            <button id="aquaColor" style="width: 100px; height: 50px; background-color: aqua;">Aqua</button>
+            <button id="yellowColor" style="width: 100px; height: 50px; background-color: rgb(208, 255, 0);">Yellow</button>
+            <button id="pinkColor" style="width: 100px; height: 50px; background-color: rgb(255, 0, 149);">Pink</button>
         </div>
 
     <script>
@@ -25,13 +25,9 @@
 
         buttons.forEach(el => { 
             el.addEventListener('click', function() {
-            if(el === aquaButton) {
-                body.style.backgroundColor = 'aqua';
-            }else if (el === yellowButton) {
-                body.style.backgroundColor = 'rgb(208, 255, 0)';
-            } else if (el === pinkButton) {
+                el === aquaButton ? body.style.backgroundColor = 'aqua':
+                el === yellowButton ? body.style.backgroundColor = 'rgb(208, 255, 0)':
                 body.style.backgroundColor = 'rgb(255, 0, 149)';
-            }
             });
         });
 
