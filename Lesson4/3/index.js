@@ -30,7 +30,3 @@ function createDiagram (data, width, height, color) {
 
     return svg;
 }
-
-// let ss = [2, 4, 6, 8, 12, 10];
-
-// console.log(createDiagram(ss, 300, 300));
