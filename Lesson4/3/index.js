@@ -11,7 +11,11 @@ function createDiagram (data, width, height, color) {
     data.map(el => {
         let item = document.createElementNS("http://www.w3.org/2000/svg", "rect");
         let itemHeight = el * scale;
-        
+        item.setAttribute("height", itemHeight + "px");
+        item.setAttribute("width", itemWidth - 4 + "px");
+
+        item.setAttribute("y", height - itemHeight);
+        item.setAttribute("x", itemWidth * el);
     });
 }
 
