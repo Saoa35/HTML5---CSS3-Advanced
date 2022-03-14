@@ -11,8 +11,22 @@
         function init() {
             let canvas = document.getElementById("canvas");
             let context = canvas.getContext("2d");
+
+            context.beginPath();
+            context.moveTo(50, 50);
+            context.lineTo(300, 300);
+            context.lineTo(270, 285);
+            context.lineTo(100, 180);
+            context.closePath();
+            context.stroke();
         }
     </script>
+
+    <style>
+        canvas {
+            border: 3px solid black;
+        }
+    </style>
 </head>
 <body>
 
