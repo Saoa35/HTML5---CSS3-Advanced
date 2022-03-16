@@ -50,7 +50,12 @@
             context.fillStyle = "blue";
             context.beginPath();
             context.moveTo(20, 50);
-            context.bezierCurveTo(140, 70, 260, 40, 380, 50);
+            context.bezierCurveTo(180, 120, 260, 40, 380, 50);
+            context.lineTo(380, 320);
+            context.bezierCurveTo(0, 390, 260, 250, 20, 350);
+            context.closePath();
+            context.fill();
+
 
         }
     </script>
