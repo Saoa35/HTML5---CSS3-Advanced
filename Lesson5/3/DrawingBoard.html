@@ -33,6 +33,23 @@
                 }
                 return {x: x, y:y};
             }
+
+            function moveHandler(e) {
+                if(started) {
+                    context.lineTo(getCoords(e).x, getCoords(e).y);
+                    context.stroke();
+                }
+            }
+
+            function downHandler(e) {
+                context.beginPath();
+                context.moveTo(getCoords(e).x, getCoords(e).y);
+                started = true;
+            }
+
+            function upHandler(e) {
+                started = false;
+            }
         }
 
     </script>
