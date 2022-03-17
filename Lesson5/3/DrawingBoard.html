@@ -8,14 +8,28 @@
 
     <style>
         canvas {
-            border: 3px solid black;
+            /* border: 3px solid black; */
+            width: 400px; 
+            height: 400px;
+        }
+
+        button {
+            display: block;
+            margin-left: 145px;
+            margin-top: 10px;
+            width: 100px;
+            height: 25px;
+            background-color: aqua;
+            font-weight: bold;
+            color: rgb(10, 121, 155);
+            border-radius: 8px;
         }
     </style>
 
 </head>
 <body>
 
-    <canvas id="canvas" width="400" height="400">
+    <canvas id="canvas" style="border: 3px solid black;">
         Браузер не поддерживает canvas :(
     </canvas>
     <button>Clear board</button>
