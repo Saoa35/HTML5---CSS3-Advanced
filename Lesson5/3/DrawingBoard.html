@@ -7,7 +7,25 @@
     <title>Drawing Board</title>
 
     <script>
-        
+
+        window.addEventListener("load", init);
+
+        function init() {
+            canvas = document.getElementById("canvas");
+            context = canvas.getContext("2d");
+            button = document.getElementById("clear");
+
+            canvas.addEventListener("mousemove", moveHandler);
+            canvas.addEventListener("mousedown", downHandler);
+            canvas.addEventListener("mouseup", upHandler);
+
+            button.onclick = function() {
+                context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+            }
+
+            
+        }
+
     </script>
 
     <style>
