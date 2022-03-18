@@ -7,7 +7,16 @@
     <title>Solar System</title>
     <script>
         window.addEventListener("load", init);
-        
+        let sun = new Image(),
+            moon = new Image(),
+            earth = new Image();
+
+            function init() {
+                sun.src = 'sun.png';
+                moon.src = 'moon.png';
+                earth.src = 'earth.png';
+                window.requestAnimationFrame(draw);
+            }
     </script>
 </head>
 <body>
