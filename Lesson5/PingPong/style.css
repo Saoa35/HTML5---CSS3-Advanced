@@ -1,0 +1,17 @@
+#canvas {
+    background-color: lightblue;
+}
+
+#score {
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    font-size: 25px;
+    top: 20px;
+    left: 350px;
+    border: 2px solid orange;
+}
+
+p {
+    text-align: center;
+}
