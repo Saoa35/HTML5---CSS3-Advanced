@@ -15,6 +15,7 @@
                 sun.src = 'sun.png';
                 moon.src = 'moon.png';
                 earth.src = 'earth.png';
+                
                 window.requestAnimationFrame(draw);
             }
 
@@ -38,7 +39,7 @@
                 context.save();
                 context.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
                 context.translate(0, 28.5);
-                context.drawImage(moon, -3.5, -3.5);
+                context.drawImage(moon, -5.5, -5.5);
                 context.restore();
 
                 context.restore();
@@ -47,7 +48,7 @@
                 context.arc(150, 150, 105, 0, Math.PI*2, false);
                 context.stroke();
 
-                context.drawImage(sun, 0, 0, 300, 300);
+                context.drawImage(sun, 110, 110, 80, 80);
 
                 window.requestAnimationFrame(draw);
 
@@ -58,7 +59,7 @@
 </head>
 <body>
 
-    <canvas id="canvas" width="300" height="300"></canvas>
+    <canvas id="canvas" width="300" height="300" style="background-color: rgb(0, 0, 0);"></canvas>
     
 </body>
 </html>
