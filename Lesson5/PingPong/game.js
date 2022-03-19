@@ -58,6 +58,21 @@ let centerX = 250,
                     dy = -dy;
                 }
             }
-
+            document.onkeydown = function() {
+                switch (window.event.keyCode) {
+                    case 37:
+                        racketLeft -= 20;
+                        if(racketLeft < 0) {
+                            racketLeft = 0;
+                        }
+                        break;
+                    case 39:
+                        racketLeft += 20;
+                        if(racketLeft + racketWidth > gameWidth) {
+                            racketLeft = gameWidth - racketWidth;
+                        }
+                        break;
+                }
+            }
         }
     }
