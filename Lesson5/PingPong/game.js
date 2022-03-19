@@ -54,10 +54,10 @@ let centerX = 250,
 
             checkCollision();
             function checkCollision() {
-                if ((centerY + radius == racketTop) && (centerX >= racketLeft) &&(centerX < (racketLeft + racketWidth))) {
+                if ((centerY + radius == racketTop) && (centerX >= racketLeft) && (centerX < (racketLeft + racketWidth))) {
                     dy = -dy;
                 }
             }
-            
+
         }
     }
