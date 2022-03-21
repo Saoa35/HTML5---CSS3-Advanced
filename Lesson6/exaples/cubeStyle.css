@@ -35,10 +35,10 @@ body {
 
 .left {
     background:rgb(18, 170, 18);
-    transform: rotate(15deg) skew(15deg 15deg) translate(-50% 100%);
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
 }
 
 .right {
     background:rgb(66, 204, 11);
-    transform: rotate(-15deg) skew(-15deg -15deg) translate(50% 100%);
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
 }
