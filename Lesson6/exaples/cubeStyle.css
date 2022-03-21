@@ -1,0 +1,44 @@
+body {
+    color: antiquewhite;
+    font-size: 24px;
+    margin: 12px 45px;
+}
+
+.spin {
+    cursor: pointer;
+    transition: 5s linear;
+}
+
+.spin:hover {
+    transform: rotateZ(360deg);
+}
+
+.cube {
+    position: relative;
+    width: 95px;
+    top: 250px;
+    left: 250px;
+}
+
+.side {
+    height: 95px;
+    line-height: 95px;
+    position: absolute;
+    text-align: center;
+    width: 95px;
+}
+
+.top {
+    background:rgb(12, 175, 12);
+    transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.left {
+    background:rgb(18, 170, 18);
+    transform: rotate(15deg) skew(15deg 15deg) translate(-50% 100%);
+}
+
+.right {
+    background:rgb(66, 204, 11);
+    transform: rotate(-15deg) skew(-15deg -15deg) translate(50% 100%);
+}
